@@ -1,0 +1,19 @@
+{
+    "name": "my-unity-path-vuepress",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "authors": {
+        "name": "Ricardo",
+        "email": ""
+    },
+    "repository": "/my-unity-path-vuepress",
+    "scripts": {
+        "docs:dev": "vuepress dev docs",
+        "build": "vuepress build src"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "vuepress": "^1.5.3"
+    }
+}
