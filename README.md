@@ -2,7 +2,7 @@
 
 ## Netlify Status
 
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cb2086de-8ba2-454f-8e0e-bd4278a0b3f9/deploy-status)](https://app.netlify.com/sites/ricardo-martin-gamedev/deploys)
 
 --
 
