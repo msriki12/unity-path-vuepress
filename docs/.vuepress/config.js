@@ -24,7 +24,8 @@ module.exports = {
                 sidebar: [
                     ['/', 'Home'],
                     ['/introduction/', "Introducción"],
-                    ['/unity/', "Unity"]
+                    ['/unity/', "Unity"],
+                    ['/art/', "Arte"]
                 ]
             },
             '/en/': {
@@ -35,7 +36,8 @@ module.exports = {
                 sidebar: [
                     ['/en/', 'Home'],
                     ['/en/introduction/', "Introduction"],
-                    ['/en/unity/', "Unity"]
+                    ['/en/unity/', "Unity"],
+                    ['/en/art/', "Art"]
                 ]
             }
         }
@@ -53,7 +55,21 @@ module.exports = {
         }
     },
     plugins: [
-        '@vuepress/plugin-back-to-top',
-        '@vuepress/plugin-medium-zoom',
-    ]
+        ['vuepress-plugin-zooming', {
+            // selector for images that you want to be zoomable
+            // default: '.content img'
+            selector: 'img',
+
+            // make images zoomable with delay after entering a page
+            // default: 500
+            // delay: 1000,
+
+            // options of zooming
+            // default: {}
+            options: {
+                bgColor: 'black',
+                zIndex: 10000,
+            },
+        }],
+    ],
 }
